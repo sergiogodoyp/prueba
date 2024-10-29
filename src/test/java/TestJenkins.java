@@ -43,7 +43,7 @@ public class TestJenkins {
         WebElement login = driver.findElement(By.className("radius"));
         login.submit();
         String mensajeActual = driver.findElement(By.className("success")).getText();
-        String mensajeEsperado = "You logged into a secure area!";
+        String mensajeEsperado = "prueba";
         assertTrue(mensajeActual.contains(mensajeEsperado), "Login Incorrecto");
     }
 
